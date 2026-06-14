@@ -119,7 +119,8 @@ CLI Argument	Type	Default	Description
 --num_fft_bins	int	251	Target bins for rFFT lookback length window configuration
 --mode	str	"coupled"	Runtime pairing routine for WaveGraphNet targets (coupled, inverse_only)
 
-**Checkpoints & Serialization
+**Checkpoints & Serialization 
+
 
 Every script relies on centralized utilities to guarantee clean experimentation tracking:
 
