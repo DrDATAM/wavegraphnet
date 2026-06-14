@@ -71,21 +71,24 @@ Plaintext
 Each execution script reads configuration flags via argparse. Training processes include dynamic learning rate scheduling via ReduceLROnPlateau and automatic performance checkpoint saving.
 1. Baseline 1D CNN (main_cnn.py)
 
-Processes raw fast Fourier amplitude/phase features stacked globally across sensor channels.
+    Processes raw fast Fourier amplitude/phase features stacked globally across sensor channels.
+    
 Bash
 
-python main_cnn.py --split A --epochs 150 --batch_size 32 --lr 0.001 --num_fft_bins 251
+    python main_cnn.py --split A --epochs 150 --batch_size 32 --lr 0.001 --num_fft_bins 251
 
 2. Sequential LSTM (main_lstm.py)
 
-Evaluates the sequential relationship across fixed FFT bins extracted from the physical sensor pairs.
+    Evaluates the sequential relationship across fixed FFT bins extracted from the physical sensor pairs.
+
 Bash
 
-python main_lstm.py --split A --epochs 150 --batch_size 4 --lr 0.001 --lstm_hidden_dim 128 --num_lstm_layers 2
+    python main_lstm.py --split A --epochs 150 --batch_size 4 --lr 0.001 --lstm_hidden_dim 128 --num_lstm_layers 2
 
 3. Spatial Graph Neural Networks (main_gnn_baselines.py)
 
-Maps the sensor network structure explicitly into a graph dataset (StandardGraphDataset). Supports simple MLP spatial layers or Multi-Head Graph Attention (GAT) structural encoders.
+    Maps the sensor network structure explicitly into a graph dataset (StandardGraphDataset). Supports simple MLP spatial layers or Multi-Head Graph Attention (GAT) structural encoders.
+
 Bash
 
 # Train using standard graph message-passing
