@@ -124,7 +124,6 @@ CLI Argument	Type	Default	Description
 
 **Checkpoints & Serialization 
 
-
 Every script relies on centralized utilities to guarantee clean experimentation tracking:
 
     Saving: High-performance weight states are serialized via save_checkpoint capturing parameters, configs, and final validation criteria evaluations.
