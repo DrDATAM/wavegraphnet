@@ -129,3 +129,18 @@ Every script relies on centralized utilities to guarantee clean experimentation 
     Saving: High-performance weight states are serialized via save_checkpoint capturing parameters, configs, and final validation criteria evaluations.
 
     Logging: Validated testing losses are logged cleanly back into a performance matrix using the structural configuration profiles under results.json.
+
+
+## Citation
+
+If you use this code in your reseracg, cite this as:
+
+@Vsharma_wavegraphnet{sharma2026wavegraphnetphysicsconsistentguidedwavedamage,
+      title={WaveGraphNet: Physics-Consistent Guided-Wave Damage Localization through Coupled Inverse-Forward Graph Learning}, 
+      author={Vinay Sharma and Aditya Bharade and Olga Fink},
+      year={2026},
+      eprint={2605.20311},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2605.20311}, 
+}
